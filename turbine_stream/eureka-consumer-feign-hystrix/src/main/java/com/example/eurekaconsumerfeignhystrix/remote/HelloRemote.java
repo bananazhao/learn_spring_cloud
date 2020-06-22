@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @remark:
  * @explain:
  */
-@FeignClient(name = "eureka-producer")
+@FeignClient(name = "eureka-producer", fallback = HelloRemoteHystrix.class)
 public interface HelloRemote {
     @GetMapping("/hello/")
     String hello(@RequestParam(value = "name")String name);

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="25e4fc71-5253-4df2-b144-65bea8587346" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/controller/HelloController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java" afterDir="false" />
+    <list default="true" id="25e4fc71-5253-4df2-b144-65bea8587346" name="Default Changelist" comment="Hystrix 监控数据聚合 Turbine">
+      <change afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemoteHystrix.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/EurekaConsumerFeignHystrixApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/EurekaConsumerFeignHystrixApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -27,36 +27,30 @@
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
+            <state relative-caret-position="346">
               <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties">
+        <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemoteHystrix.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+            <state relative-caret-position="190">
+              <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+              <folding>
+                <element signature="e#290#291#0" expanded="true" />
+                <element signature="e#317#318#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/pom.xml">
-          <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="23" column="21" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            <state relative-caret-position="266">
+              <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,7 +58,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/controller/HelloController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="182">
@@ -83,8 +77,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Interface" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -104,11 +98,12 @@
         <option value="$PROJECT_DIR$/eureka-producer/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eureka-producer/src/main/java/com/example/eurekaproducer/controller/HelloController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/EurekaConsumerFeignHystrixApplication.java" />
-        <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java" />
         <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/controller/HelloController.java" />
+        <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemoteHystrix.java" />
+        <option value="$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java" />
       </list>
     </option>
   </component>
@@ -141,7 +136,9 @@
     <option name="width" value="1317" />
     <option name="height" value="735" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -190,6 +187,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="eurekaconsumerfeignhystrix" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="turbine_stream" type="b2602c69:ProjectViewProjectNode" />
+              <item name="turbine_stream" type="462c0819:PsiDirectoryNode" />
+              <item name="eureka-consumer-feign-hystrix" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="eurekaconsumerfeignhystrix" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -259,7 +266,7 @@
       <option name="presentableId" value="Default" />
       <updated>1592814764298</updated>
       <workItem from="1592814766468" duration="1995000" />
-      <workItem from="1592816893736" duration="472000" />
+      <workItem from="1592816893736" duration="731000" />
     </task>
     <task id="LOCAL-00001" summary="Hystrix 监控数据聚合 Turbine">
       <created>1592816182706</created>
@@ -282,11 +289,18 @@
       <option name="project" value="LOCAL" />
       <updated>1592816986750</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Hystrix 监控数据聚合 Turbine">
+      <created>1592817397280</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1592817397280</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2245000" />
+    <option name="totallyTimeSpent" value="2562000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -299,7 +313,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="387" y="217" width="1317" height="735" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25377885" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -312,7 +325,7 @@
       <window_info id="Web" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4988067" visible="true" weight="0.3294509" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4988067" weight="0.3294509" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -321,10 +334,10 @@
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.32890365" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50119334" side_tool="true" weight="0.3294509" />
-      <window_info anchor="bottom" id="Messages" order="11" weight="0.3294509" />
+      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.3294509" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" weight="0.32890365" />
       <window_info anchor="bottom" id="Database Changes" order="13" />
-      <window_info anchor="bottom" id="Version Control" order="14" />
+      <window_info anchor="bottom" id="Version Control" order="14" weight="0.3294509" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,21 +408,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
-          <caret line="2" column="16" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/pom.xml">
       <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
       <provider selected="true" editor-type-id="text-editor">
@@ -425,16 +423,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/controller/HelloController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -443,6 +431,45 @@
             <element signature="imports" expanded="true" />
             <element signature="e#771#772#0" expanded="true" />
             <element signature="e#823#824#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider editor-type-id="MavenHelperPluginDependencyAnalyzer" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="66" column="54" selection-start-line="66" selection-start-column="54" selection-end-line="66" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemoteHystrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="10" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="10" />
+          <folding>
+            <element signature="e#290#291#0" expanded="true" />
+            <element signature="e#317#318#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/eureka-consumer-feign-hystrix/src/main/java/com/example/eurekaconsumerfeignhystrix/remote/HelloRemote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="74" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
