@@ -64,6 +64,7 @@
     <modules>
         <module>eureka-server</module>
         <module>eureka-producer</module>
+        <module>eureka-consumer-feign-hystrix</module>
     </modules>
 
 </project>
